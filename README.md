@@ -1,12 +1,4 @@
 # ShapeImageView
-
-[![Maven central](https://img.shields.io/maven-central/v/io.github.FlyJingFish/ShapeImageView)](https://central.sonatype.com/search?q=io.github.FlyJingFish)
-[![GitHub stars](https://img.shields.io/github/stars/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/network)
-[![GitHub issues](https://img.shields.io/github/issues/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/issues)
-[![GitHub license](https://img.shields.io/github/license/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/blob/master/LICENSE)
-
-
 ## [中文版使用说明](https://github.com/FlyJingFish/ShapeImageView/blob/master/README-zh.md)
 
 ## ShapeImageView supports circle or rounded corners, and can draw circle background borders or rounded box background borders. In addition to the built-in properties of ImageView, 4 new display modes are added;
@@ -40,7 +32,7 @@ ShapeImageView|AlmightyShapeImageView
 allprojects {
     repositories {
         ...
-        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+       maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -48,7 +40,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'io.github.FlyJingFish:ShapeImageView:1.5.4'
+    implementation 'com.github.hirezy:ShapeImageView:1.0.0'
 }
 ```
 ## The third step, instructions for use
@@ -334,11 +326,5 @@ Glide.with(context).load("Internet connection").into(new CustomTarget<Drawable>(
     }
 });
 ```
-
-# Finally, I recommend another library I wrote, which can easily realize the animation zoom effect of clicking on the small image to view the large image in the application
-
-- [OpenImage](https://github.com/FlyJingFish/OpenImage) (current library built in)
-
-- [Homepage view more open source libraries](https://github.com/FlyJingFish)
 
 
