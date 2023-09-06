@@ -1,20 +1,12 @@
 # ShapeImageView
 
-[![Maven central](https://img.shields.io/maven-central/v/io.github.FlyJingFish/ShapeImageView)](https://central.sonatype.dev/search?q=io.github.FlyJingFish)
-[![GitHub stars](https://img.shields.io/github/stars/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/network)
-[![GitHub issues](https://img.shields.io/github/issues/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/issues)
-[![GitHub license](https://img.shields.io/github/license/FlyJingFish/ShapeImageView.svg)](https://github.com/FlyJingFish/ShapeImageView/blob/master/LICENSE)
-
-
-
 ## ShapeImageView支持圆图或圆角图，可绘制圆环背景边框或圆角框背景边框，除ImageView自带属性外新增4种显示模式；
 ## AlmightyShapeImageView支持显示任意图形，只有你想不到，没有它做不到；
 ## 本库中的ImageView没有操作Bitmap，可以放心使用！！！
 
 ShapeImageView|AlmightyShapeImageView
  ----- | ----- 
-<img src="https://github.com/FlyJingFish/ShapeImageView/blob/master/screenshot/Screenshot_20221011_144810.jpg" width="400px" height="800px" alt="show" />|<img src="https://github.com/FlyJingFish/ShapeImageView/blob/master/screenshot/Screenshot_20221031_123252.jpg" width="400px" height="800px" alt="show" />
+<img src="https://github.com/hirezy/ShapeImageView/blob/master/screenshot/Screenshot_20221011_144810.jpg" width="400px" height="800px" alt="show" />|<img src="https://github.com/hirezy/ShapeImageView/blob/master/screenshot/Screenshot_20221031_123252.jpg" width="400px" height="800px" alt="show" />
 
 
 
@@ -37,7 +29,7 @@ ShapeImageView|AlmightyShapeImageView
 allprojects {
     repositories {
         ...
-        maven { url "https://s01.oss.sonatype.org/content/groups/public" }
+       maven { url 'https://jitpack.io' }
     }
 }
 ```
@@ -45,7 +37,7 @@ allprojects {
 
 ```gradle
 dependencies {
-    implementation 'com.github.FlyJingFish:ShapeImageView:1.5.4'
+    implementation 'com.github.hirezy:ShapeImageView:1.0.0'
 }
 ```
 ## 第三步，使用说明
@@ -60,21 +52,21 @@ dependencies {
     android:layout_height="110dp"
     android:layout_marginStart="10dp"
     android:padding="10dp"
-    app:FlyJFish_shape="rectangle"
-    app:FlyJFish_shape_border="rectangle"
-    app:FlyJFish_shape_border_width="3dp"
-    app:FlyJFish_shape_border_angle="45"
-    app:FlyJFish_shape_left_top_radius="8dp"
-    app:FlyJFish_shape_right_top_radius="12dp"
-    app:FlyJFish_shape_right_bottom_radius="16dp"
-    app:FlyJFish_shape_left_bottom_radius="20dp"
-    app:FlyJFish_shape_border_left_top_radius="10dp"
-    app:FlyJFish_shape_border_right_top_radius="15dp"
-    app:FlyJFish_shape_border_right_bottom_radius="20dp"
-    app:FlyJFish_shape_border_left_bottom_radius="25dp"
-    app:FlyJFish_shape_border_gradient="true"
-    app:FlyJFish_shape_border_startColor="@color/purple_200"
-    app:FlyJFish_shape_border_endColor="@color/teal_700"
+    app:Hirezy_shape="rectangle"
+    app:Hirezy_shape_border="rectangle"
+    app:Hirezy_shape_border_width="3dp"
+    app:Hirezy_shape_border_angle="45"
+    app:Hirezy_shape_left_top_radius="8dp"
+    app:Hirezy_shape_right_top_radius="12dp"
+    app:Hirezy_shape_right_bottom_radius="16dp"
+    app:Hirezy_shape_left_bottom_radius="20dp"
+    app:Hirezy_shape_border_left_top_radius="10dp"
+    app:Hirezy_shape_border_right_top_radius="15dp"
+    app:Hirezy_shape_border_right_bottom_radius="20dp"
+    app:Hirezy_shape_border_left_bottom_radius="25dp"
+    app:Hirezy_shape_border_gradient="true"
+    app:Hirezy_shape_border_startColor="@color/purple_200"
+    app:Hirezy_shape_border_endColor="@color/teal_700"
     android:scaleType="centerCrop" />
 ```
 
@@ -90,38 +82,38 @@ dependencies {
 
 | attr                                      |     format      |             description              |
 |-------------------------------------------|:---------------:|:------------------------------------:|
-| FlyJFish_shape                            |      enum       |        图片是 rectangle矩形/oval圆形        |
-| FlyJFish_shape_radius                     |    dimension    |               图片四个角圆角                |
-| FlyJFish_shape_left_top_radius            |    dimension    |               图片左上角圆角                |
-| FlyJFish_shape_right_top_radius           |    dimension    |               图片右上角圆角                |
-| FlyJFish_shape_right_bottom_radius        |    dimension    |               图片右下角圆角                |
-| FlyJFish_shape_left_bottom_radius         |    dimension    |               图片左下角圆角                |
-| FlyJFish_shape_start_top_radius           |    dimension    |           图片左上(Rtl:右上)角圆角            |
-| FlyJFish_shape_end_top_radius             |    dimension    |           图片右上(Rtl:左上)角圆角            |
-| FlyJFish_shape_end_bottom_radius          |    dimension    |           图片右下(Rtl:左下)角圆角            |
-| FlyJFish_shape_start_bottom_radius        |    dimension    |           图片左下(Rtl:右下)角圆角            |
-| FlyJFish_shape_border                     |      enum       | 背景边框绘制形状是 none不绘制/rectangle矩形/oval圆形 |
-| FlyJFish_shape_border_radius              |    dimension    |              背景边框四个角圆角               |
-| FlyJFish_shape_border_left_top_radius     |    dimension    |              背景边框左上角圆角               |
-| FlyJFish_shape_border_right_top_radius    |    dimension    |              背景边框右上角圆角               |
-| FlyJFish_shape_border_right_bottom_radius |    dimension    |              背景边框右下角圆角               |
-| FlyJFish_shape_border_left_bottom_radius  |    dimension    |              背景边框左下角圆角               |
-| FlyJFish_shape_border_start_top_radius    |    dimension    |          背景边框左上(Rtl:右上)角圆角           |
-| FlyJFish_shape_border_end_top_radius      |    dimension    |          背景边框右上(Rtl:左上)角圆角           |
-| FlyJFish_shape_border_end_bottom_radius   |    dimension    |          背景边框右下(Rtl:左下)角圆角           |
-| FlyJFish_shape_border_start_bottom_radius |    dimension    |          背景边框左下(Rtl:右下)角圆角           |
-| FlyJFish_shape_border_color               | color/reference |               背景边框绘制颜色               |
-| FlyJFish_shape_border_gradient            |     boolean     |             背景边框绘制是否渐变色              |
-| FlyJFish_shape_border_startColor          | color/reference |            背景边框绘制渐变色开始颜色             |
-| FlyJFish_shape_border_centerColor         | color/reference |            背景边框绘制渐变色中间颜色             |
-| FlyJFish_shape_border_endColor            | color/reference |            背景边框绘制渐变色结束颜色             |
-| FlyJFish_shape_border_angle               |      float      |            背景边框绘制渐变色开始角度             |
-| FlyJFish_shape_border_rtl_angle           |     boolean     |       背景边框绘制渐变色开始角度是否支持镜像Rtl适配       |
-| FlyJFish_shape_border_strokeWidth         |    dimension    |              背景边框绘制画笔宽度              |
-| FlyJFish_autoCrop_height_width_ratio      |      float      |           图像高宽比是View高宽比的倍数           |
-| FlyJFish_shapeScaleType                   |      enum       |         如果设置新增显示模式设置这个，详情如下：         |
+| Hirezy_shape                            |      enum       |        图片是 rectangle矩形/oval圆形        |
+| Hirezy_shape_radius                     |    dimension    |               图片四个角圆角                |
+| Hirezy_shape_left_top_radius            |    dimension    |               图片左上角圆角                |
+| Hirezy_shape_right_top_radius           |    dimension    |               图片右上角圆角                |
+| Hirezy_shape_right_bottom_radius        |    dimension    |               图片右下角圆角                |
+| Hirezy_shape_left_bottom_radius         |    dimension    |               图片左下角圆角                |
+| Hirezy_shape_start_top_radius           |    dimension    |           图片左上(Rtl:右上)角圆角            |
+| Hirezy_shape_end_top_radius             |    dimension    |           图片右上(Rtl:左上)角圆角            |
+| Hirezy_shape_end_bottom_radius          |    dimension    |           图片右下(Rtl:左下)角圆角            |
+| Hirezy_shape_start_bottom_radius        |    dimension    |           图片左下(Rtl:右下)角圆角            |
+| Hirezy_shape_border                     |      enum       | 背景边框绘制形状是 none不绘制/rectangle矩形/oval圆形 |
+| Hirezy_shape_border_radius              |    dimension    |              背景边框四个角圆角               |
+| Hirezy_shape_border_left_top_radius     |    dimension    |              背景边框左上角圆角               |
+| Hirezy_shape_border_right_top_radius    |    dimension    |              背景边框右上角圆角               |
+| Hirezy_shape_border_right_bottom_radius |    dimension    |              背景边框右下角圆角               |
+| Hirezy_shape_border_left_bottom_radius  |    dimension    |              背景边框左下角圆角               |
+| Hirezy_shape_border_start_top_radius    |    dimension    |          背景边框左上(Rtl:右上)角圆角           |
+| Hirezy_shape_border_end_top_radius      |    dimension    |          背景边框右上(Rtl:左上)角圆角           |
+| Hirezy_shape_border_end_bottom_radius   |    dimension    |          背景边框右下(Rtl:左下)角圆角           |
+| Hirezy_shape_border_start_bottom_radius |    dimension    |          背景边框左下(Rtl:右下)角圆角           |
+| Hirezy_shape_border_color               | color/reference |               背景边框绘制颜色               |
+| Hirezy_shape_border_gradient            |     boolean     |             背景边框绘制是否渐变色              |
+| Hirezy_shape_border_startColor          | color/reference |            背景边框绘制渐变色开始颜色             |
+| Hirezy_shape_border_centerColor         | color/reference |            背景边框绘制渐变色中间颜色             |
+| Hirezy_shape_border_endColor            | color/reference |            背景边框绘制渐变色结束颜色             |
+| Hirezy_shape_border_angle               |      float      |            背景边框绘制渐变色开始角度             |
+| Hirezy_shape_border_rtl_angle           |     boolean     |       背景边框绘制渐变色开始角度是否支持镜像Rtl适配       |
+| Hirezy_shape_border_strokeWidth         |    dimension    |              背景边框绘制画笔宽度              |
+| Hirezy_autoCrop_height_width_ratio      |      float      |           图像高宽比是View高宽比的倍数           |
+| Hirezy_shapeScaleType                   |      enum       |         如果设置新增显示模式设置这个，详情如下：         |
 
-| FlyJFish_shapeScaleType |        description        |
+| Hirezy_shapeScaleType |        description        |
 |-------------------------|:-------------------------:|
 | startCrop               |          裁剪开始左上           |
 | endCrop                 |          裁剪开始右下           |
@@ -130,9 +122,9 @@ dependencies {
 
 # 二、AlmightyShapeImageView 使用说明
 
-### AlmightyShapeImageView 示例（库内内置 ❤️ [ic_vector_heart](https://github.com/FlyJingFish/ShapeImageView/tree/master/library/src/main/res/drawable) 和 ⭐️ [ic_vector_star](https://github.com/FlyJingFish/ShapeImageView/tree/master/library/src/main/res/drawable)）
+### AlmightyShapeImageView 示例（库内内置 ❤️ [ic_vector_heart](https://github.com/hirezy/ShapeImageView/tree/master/library/src/main/res/drawable) 和 ⭐️ [ic_vector_star](https://github.com/hirezy/ShapeImageView/tree/master/library/src/main/res/drawable)）
 
-**使用的关键在于设置一个图形资源图（即 FlyJFish_almighty_shape_resource），想做显示什么形状的图片只要设置一个资源图，就都可以实现**
+**使用的关键在于设置一个图形资源图（即 Hirezy_almighty_shape_resource），想做显示什么形状的图片只要设置一个资源图，就都可以实现**
 
 ```xml
 <hirezy.shapeimageviewlib.AlmightyShapeImageView
@@ -141,7 +133,7 @@ dependencies {
     android:layout_height="110dp"
     android:layout_marginStart="5dp"
     android:src="@mipmap/ic_launcher"
-    app:FlyJFish_almighty_shape_resource="@drawable/ic_vector_heart"
+    app:Hirezy_almighty_shape_resource="@drawable/ic_vector_heart"
     android:scaleType="centerCrop" />
 ```
 
@@ -149,11 +141,11 @@ dependencies {
 
 | attr                              |  format   | description |
 |-----------------------------------|:---------:|:-----------:|
-| FlyJFish_almighty_shape_resource  | reference |    图形资源     |
-| FlyJFish_almighty_shape_scaleType |   enum    | 绘制图形资源的显示类型 |
+| Hirezy_almighty_shape_resource  | reference |    图形资源     |
+| Hirezy_almighty_shape_scaleType |   enum    | 绘制图形资源的显示类型 |
 
 
-| FlyJFish_almighty_shape_scaleType |                               description                               |
+| Hirezy_almighty_shape_scaleType |                               description                               |
 |-----------------------------------|:-----------------------------------------------------------------------:|
 | followImageViewKeepResourceScale  |                 图形资源跟随ImageView的ScaleType类型并且保持图形资源的宽高比                 |
 | followImageViewFullImage          |             图形资源跟随ImageView的ScaleType类型但是充满图片的宽高（图形相对可能会拉伸）             |
@@ -169,13 +161,9 @@ dependencies {
 
 ### 图形资源设置提示
 
-**FlyJFish_almighty_shape_resource** 就是让UI提前将图形导出的图片资源，可以是shape，可以是vector，可以是png图片，但是**强烈建议使用shape或vector矢量图形效果更佳**
+**Hirezy_almighty_shape_resource** 就是让UI提前将图形导出的图片资源，可以是shape，可以是vector，可以是png图片，但是**强烈建议使用shape或vector矢量图形效果更佳**
 
-如果使用是png或svg资源可以将其转化为vector，详情可以看我的博客：
-
-- [博客使用说明](https://blog.csdn.net/u013077428/article/details/127613904)
-
-#### 如果想直接使用svg格式图可以这样做（不建议这样做，因为 svg 图可以直接转化为 vector 图，[点此查看转化说明](https://blog.csdn.net/u013077428/article/details/127613904)）
+如果使用是png或svg资源可以将其转化为vector
 
 引用三方解析包
 
@@ -187,7 +175,7 @@ dependencies {
 
 **新增如下两个类**
 
-- [SvgDecoder](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/SvgDecoder.java)
+- [SvgDecoder](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/SvgDecoder.java)
 
 ```java
 public class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
@@ -217,7 +205,7 @@ public class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
 }
 ```
 
-- [SvgDrawableTranscoder](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/SvgDrawableTranscoder.java)
+- [SvgDrawableTranscoder](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/SvgDrawableTranscoder.java)
 
 ```java
 public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDrawable> {
@@ -235,7 +223,7 @@ public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDra
 
 **新增glide配置**
 
-[MyAppGlideModule](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/MyAppGlideModule.java)
+[MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/MyAppGlideModule.java)
 
 ```java
 
@@ -331,10 +319,5 @@ Glide.with(context).load("网络链接").into(new CustomTarget<Drawable>() {
 
 - 解决方案：设置margin属性即可解决
 
-# 最后推荐我写的另一个库，轻松实现在应用内点击小图查看大图的动画放大效果
-
-- [OpenImage](https://github.com/FlyJingFish/OpenImage) （已内置当前库）
-
-- [主页查看更多开源库](https://github.com/FlyJingFish)
 
 

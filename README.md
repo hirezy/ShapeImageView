@@ -1,5 +1,5 @@
 # ShapeImageView
-## [中文版使用说明](https://github.com/FlyJingFish/ShapeImageView/blob/master/README-zh.md)
+## [中文版使用说明](https://github.com/hirezy/ShapeImageView/blob/master/README-zh.md)
 
 ## ShapeImageView supports circle or rounded corners, and can draw circle background borders or rounded box background borders. In addition to the built-in properties of ImageView, 4 new display modes are added;
 ## AlmightyShapeImageView supports the display of arbitrary graphics, only you can't think of it, you can't do it without it;
@@ -8,7 +8,7 @@
 
 ShapeImageView|AlmightyShapeImageView
  ----- | ----- 
-<img src="https://github.com/FlyJingFish/ShapeImageView/blob/master/screenshot/Screenshot_20221011_144810.jpg" width="400px" height="800px" alt="show" />|<img src="https://github.com/FlyJingFish/ShapeImageView/blob/master/screenshot/Screenshot_20221031_123252.jpg" width="400px" height="800px" alt="show" />
+<img src="https://github.com/hirezy/ShapeImageView/blob/master/screenshot/Screenshot_20221011_144810.jpg" width="400px" height="800px" alt="show" />|<img src="https://github.com/hirezy/ShapeImageView/blob/master/screenshot/Screenshot_20221031_123252.jpg" width="400px" height="800px" alt="show" />
 
 
 
@@ -55,21 +55,21 @@ dependencies {
     android:layout_height="110dp"
     android:layout_marginStart="10dp"
     android:padding="10dp"
-    app:FlyJFish_shape="rectangle"
-    app:FlyJFish_shape_border="rectangle"
-    app:FlyJFish_shape_border_width="3dp"
-    app:FlyJFish_shape_border_angle="45"
-    app:FlyJFish_shape_left_top_radius="8dp"
-    app:FlyJFish_shape_right_top_radius="12dp"
-    app:FlyJFish_shape_right_bottom_radius="16dp"
-    app:FlyJFish_shape_left_bottom_radius="20dp"
-    app:FlyJFish_shape_border_left_top_radius="10dp"
-    app:FlyJFish_shape_border_right_top_radius="15dp"
-    app:FlyJFish_shape_border_right_bottom_radius="20dp"
-    app:FlyJFish_shape_border_left_bottom_radius="25dp"
-    app:FlyJFish_shape_border_gradient="true"
-    app:FlyJFish_shape_border_startColor="@color/purple_200"
-    app:FlyJFish_shape_border_endColor="@color/teal_700"
+    app:Hirezy_shape="rectangle"
+    app:Hirezy_shape_border="rectangle"
+    app:Hirezy_shape_border_width="3dp"
+    app:Hirezy_shape_border_angle="45"
+    app:Hirezy_shape_left_top_radius="8dp"
+    app:Hirezy_shape_right_top_radius="12dp"
+    app:Hirezy_shape_right_bottom_radius="16dp"
+    app:Hirezy_shape_left_bottom_radius="20dp"
+    app:Hirezy_shape_border_left_top_radius="10dp"
+    app:Hirezy_shape_border_right_top_radius="15dp"
+    app:Hirezy_shape_border_right_bottom_radius="20dp"
+    app:Hirezy_shape_border_left_bottom_radius="25dp"
+    app:Hirezy_shape_border_gradient="true"
+    app:Hirezy_shape_border_startColor="@color/purple_200"
+    app:Hirezy_shape_border_endColor="@color/teal_700"
     android:scaleType="centerCrop" />
 ```
 
@@ -85,38 +85,38 @@ dependencies {
 
 | attr                                      |     format      |                                         description                                         |
 |-------------------------------------------|:---------------:|:-------------------------------------------------------------------------------------------:|
-| FlyJFish_shape                            |      enum       |                           The picture is a rectangle/oval circle                            |
-| FlyJFish_shape_radius                     |    dimension    |                          The four corners of the image are rounded                          |
-| FlyJFish_shape_left_top_radius            |    dimension    |                        The upper left corner of the image is rounded                        |
-| FlyJFish_shape_right_top_radius           |    dimension    |                    Round corners in the upper right corner of the image                     |
-| FlyJFish_shape_right_bottom_radius        |    dimension    |                       The bottom right corner of the image is rounded                       |
-| FlyJFish_shape_left_bottom_radius         |    dimension    |                       The bottom left corner of the image is rounded                        |
-| FlyJFish_shape_start_top_radius           |    dimension    |                       image top left (Rtl: top right) corner rounded                        |
-| FlyJFish_shape_end_top_radius             |    dimension    |                       image top right (Rtl: top left) corner rounded                        |
-| FlyJFish_shape_end_bottom_radius          |    dimension    |                   picture bottom right (Rtl: bottom left) corner rounded                    |
-| FlyJFish_shape_start_bottom_radius        |    dimension    |                   picture bottom left (Rtl: bottom right) corner rounded                    |
-| FlyJFish_shape_border                     |      enum       | The background border drawing shape is none without drawing/rectangle rectangle/oval circle |
-| FlyJFish_shape_border_radius              |    dimension    |                    The four corners of the background border are rounded                    |
-| FlyJFish_shape_border_left_top_radius     |    dimension    |                   The top left corner of the background border is rounded                   |
-| FlyJFish_shape_border_right_top_radius    |    dimension    |             rounded corners in the upper right corner of the background border              |
-| FlyJFish_shape_border_right_bottom_radius |    dimension    |                 The bottom right corner of the background border is rounded                 |
-| FlyJFish_shape_border_left_bottom_radius  |    dimension    |                 The bottom left corner of the background border is rounded                  |
-| FlyJFish_shape_border_start_top_radius    |    dimension    |                 background border top left (Rtl: top right) corner rounded                  |
-| FlyJFish_shape_border_end_top_radius      |    dimension    |                 background border top right (Rtl: top left) corner rounded                  |
-| FlyJFish_shape_border_end_bottom_radius   |    dimension    |              background border bottom right (Rtl: bottom left) corner rounded               |
-| FlyJFish_shape_border_start_bottom_radius |    dimension    |       The bottom left (Rtl: bottom right) corner of the background border is rounded        |
-| FlyJFish_shape_border_color               | color/reference |                               Background border drawing color                               |
-| FlyJFish_shape_border_gradient            |     boolean     |                  Whether the background border is drawn in gradient color                   |
-| FlyJFish_shape_border_startColor          | color/reference |                    The background border draw gradient color start color                    |
-| FlyJFish_shape_border_centerColor         | color/reference |                    The background border draws the gradient middle color                    |
-| FlyJFish_shape_border_endColor            | color/reference |                  The background border draws the gradient color end color                   |
-| FlyJFish_shape_border_angle               |      float      |                   Start angle of background border drawing gradient color                   |
-| FlyJFish_shape_border_rtl_angle           |     boolean     |    Does the gradient start angle of the background border support mirror Rtl adaptation     |
-| FlyJFish_shape_border_strokeWidth         |    dimension    |                          width of background border drawing brush                           |
-| FlyJFish_autoCrop_height_width_ratio      |      float      |                The image aspect ratio is a multiple of the View aspect ratio                |
-| FlyJFish_shapeScaleType                   |      enum       |          If you set the new display mode to set this, the details are as follows:           |
+| Hirezy_shape                            |      enum       |                           The picture is a rectangle/oval circle                            |
+| Hirezy_shape_radius                     |    dimension    |                          The four corners of the image are rounded                          |
+| Hirezy_shape_left_top_radius            |    dimension    |                        The upper left corner of the image is rounded                        |
+| Hirezy_shape_right_top_radius           |    dimension    |                    Round corners in the upper right corner of the image                     |
+| Hirezy_shape_right_bottom_radius        |    dimension    |                       The bottom right corner of the image is rounded                       |
+| Hirezy_shape_left_bottom_radius         |    dimension    |                       The bottom left corner of the image is rounded                        |
+| Hirezy_shape_start_top_radius           |    dimension    |                       image top left (Rtl: top right) corner rounded                        |
+| Hirezy_shape_end_top_radius             |    dimension    |                       image top right (Rtl: top left) corner rounded                        |
+| Hirezy_shape_end_bottom_radius          |    dimension    |                   picture bottom right (Rtl: bottom left) corner rounded                    |
+| Hirezy_shape_start_bottom_radius        |    dimension    |                   picture bottom left (Rtl: bottom right) corner rounded                    |
+| Hirezy_shape_border                     |      enum       | The background border drawing shape is none without drawing/rectangle rectangle/oval circle |
+| Hirezy_shape_border_radius              |    dimension    |                    The four corners of the background border are rounded                    |
+| Hirezy_shape_border_left_top_radius     |    dimension    |                   The top left corner of the background border is rounded                   |
+| Hirezy_shape_border_right_top_radius    |    dimension    |             rounded corners in the upper right corner of the background border              |
+| Hirezy_shape_border_right_bottom_radius |    dimension    |                 The bottom right corner of the background border is rounded                 |
+| Hirezy_shape_border_left_bottom_radius  |    dimension    |                 The bottom left corner of the background border is rounded                  |
+| Hirezy_shape_border_start_top_radius    |    dimension    |                 background border top left (Rtl: top right) corner rounded                  |
+| Hirezy_shape_border_end_top_radius      |    dimension    |                 background border top right (Rtl: top left) corner rounded                  |
+| Hirezy_shape_border_end_bottom_radius   |    dimension    |              background border bottom right (Rtl: bottom left) corner rounded               |
+| Hirezy_shape_border_start_bottom_radius |    dimension    |       The bottom left (Rtl: bottom right) corner of the background border is rounded        |
+| Hirezy_shape_border_color               | color/reference |                               Background border drawing color                               |
+| Hirezy_shape_border_gradient            |     boolean     |                  Whether the background border is drawn in gradient color                   |
+| Hirezy_shape_border_startColor          | color/reference |                    The background border draw gradient color start color                    |
+| Hirezy_shape_border_centerColor         | color/reference |                    The background border draws the gradient middle color                    |
+| Hirezy_shape_border_endColor            | color/reference |                  The background border draws the gradient color end color                   |
+| Hirezy_shape_border_angle               |      float      |                   Start angle of background border drawing gradient color                   |
+| Hirezy_shape_border_rtl_angle           |     boolean     |    Does the gradient start angle of the background border support mirror Rtl adaptation     |
+| Hirezy_shape_border_strokeWidth         |    dimension    |                          width of background border drawing brush                           |
+| Hirezy_autoCrop_height_width_ratio      |      float      |                The image aspect ratio is a multiple of the View aspect ratio                |
+| Hirezy_shapeScaleType                   |      enum       |          If you set the new display mode to set this, the details are as follows:           |
 
-| FlyJFish_shapeScaleType |                      description                      |
+| Hirezy_shapeScaleType |                      description                      |
 |-------------------------|:-----------------------------------------------------:|
 | startCrop               |                  Crop start top left                  |
 | endCrop                 |                Crop start bottom right                |
@@ -125,9 +125,9 @@ dependencies {
 
 # 二、AlmightyShapeImageView Instructions for Use
 
-### AlmightyShapeImageView example（Built-in library ❤️ [ic_vector_heart](https://github.com/FlyJingFish/ShapeImageView/tree/master/library/src/main/res/drawable) 和 ⭐️ [ic_vector_star](https://github.com/FlyJingFish/ShapeImageView/tree/master/library/src/main/res/drawable)）
+### AlmightyShapeImageView example（Built-in library ❤️ [ic_vector_heart](https://github.com/hirezy/ShapeImageView/tree/master/library/src/main/res/drawable) 和 ⭐️ [ic_vector_star](https://github.com/hirezy/ShapeImageView/tree/master/library/src/main/res/drawable)）
 
-**The key to use is to set a graphic resource map (that is, FlyJFish_almighty_shape_resource). If you want to display a picture of any shape, you can achieve it as long as you set a resource map.**
+**The key to use is to set a graphic resource map (that is, Hirezy_almighty_shape_resource). If you want to display a picture of any shape, you can achieve it as long as you set a resource map.**
 
 ```xml
 <hirezy.shapeimageviewlib.AlmightyShapeImageView
@@ -136,7 +136,7 @@ dependencies {
     android:layout_height="110dp"
     android:layout_marginStart="5dp"
     android:src="@mipmap/ic_launcher"
-    app:FlyJFish_almighty_shape_resource="@drawable/ic_vector_heart"
+    app:Hirezy_almighty_shape_resource="@drawable/ic_vector_heart"
     android:scaleType="centerCrop" />
 ```
 
@@ -144,11 +144,11 @@ dependencies {
 
 | attr                              |  format   |               description                |
 |-----------------------------------|:---------:|:----------------------------------------:|
-| FlyJFish_almighty_shape_resource  | reference |              Shape Resource              |
-| FlyJFish_almighty_shape_scaleType |   enum    | The display type of the drawing resource |
+| Hirezy_almighty_shape_resource  | reference |              Shape Resource              |
+| Hirezy_almighty_shape_scaleType |   enum    | The display type of the drawing resource |
 
 
-| FlyJFish_almighty_shape_scaleType |                                                                                           description                                                                                            |
+| Hirezy_almighty_shape_scaleType |                                                                                           description                                                                                            |
 |-----------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | followImageViewKeepResourceScale  |                                       The graphics resource follows the ImageView's ScaleType type and maintains the aspect ratio of the graphics resource                                       |
 | followImageViewFullImage          |                          The graphics resource follows the ImageView's ScaleType but fills the width and height of the image (the graphics may be stretched relatively)                          |
@@ -164,15 +164,12 @@ dependencies {
 
 ### Graphic resource setting prompt
 
-**FlyJFish_almighty_shape_resource** is the image resource that allows the UI to export the graphics in advance. It can be a shape, a vector, or a png image, but **It is strongly recommended to use shape or vector vector graphics for better results**
+**hirezy_almighty_shape_resource** is the image resource that allows the UI to export the graphics in advance. It can be a shape, a vector, or a png image, but **It is strongly recommended to use shape or vector vector graphics for better results**
 
 If you use png or svg resources, you can convert them to vector. For details, see my blog:
 
-- [Blog Instructions](https://blog.csdn.net/u013077428/article/details/127613904)
+#### If you want to use the svg format map directly, you can do this(This is not recommended, because svg images can be directly converted into vector images)
 
-#### If you want to use the svg format map directly, you can do this(This is not recommended, because svg images can be directly converted into vector images, [click here to view the conversion instructions](https://blog.csdn.net/u013077428/article/details/127613904))
-
-Refer to the three-party analysis package
 
 ```gradle
 dependencies {
@@ -182,7 +179,7 @@ dependencies {
 
 **Add the following two classes**
 
-- [SvgDecoder](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/SvgDecoder.java)
+- [SvgDecoder](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/SvgDecoder.java)
 
 ```java
 public class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
@@ -212,7 +209,7 @@ public class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
 }
 ```
 
-- [SvgDrawableTranscoder](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/SvgDrawableTranscoder.java)
+- [SvgDrawableTranscoder](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/SvgDrawableTranscoder.java)
 
 ```java
 public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDrawable> {
@@ -230,7 +227,7 @@ public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDra
 
 **New glide configuration**
 
-[MyAppGlideModule](https://github.com/FlyJingFish/ShapeImageView/tree/master/app/src/main/java/com/flyjingfish/shapeimageview/svg/MyAppGlideModule.java)
+[MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/MyAppGlideModule.java)
 
 ```java
 
