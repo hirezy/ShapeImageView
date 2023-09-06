@@ -127,7 +127,7 @@ dependencies {
 **使用的关键在于设置一个图形资源图（即 Hirezy_almighty_shape_resource），想做显示什么形状的图片只要设置一个资源图，就都可以实现**
 
 ```xml
-<hirezy.shapeimageviewlib.AlmightyShapeImageView
+<com.hirezy.shapeimageviewlib.AlmightyShapeImageView
     android:id="@+id/iv1"
     android:layout_width="110dp"
     android:layout_height="110dp"
@@ -223,7 +223,7 @@ public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDra
 
 **新增glide配置**
 
-[MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/MyAppGlideModule.java)
+[MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/MyAppGlideModule.java)
 
 ```java
 

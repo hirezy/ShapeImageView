@@ -130,7 +130,7 @@ dependencies {
 **The key to use is to set a graphic resource map (that is, Hirezy_almighty_shape_resource). If you want to display a picture of any shape, you can achieve it as long as you set a resource map.**
 
 ```xml
-<hirezy.shapeimageviewlib.AlmightyShapeImageView
+<com.hirezy.shapeimageviewlib.AlmightyShapeImageView
     android:id="@+id/iv1"
     android:layout_width="110dp"
     android:layout_height="110dp"
@@ -227,7 +227,7 @@ public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDra
 
 **New glide configuration**
 
-[MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/svg/MyAppGlideModule.java)
+- [MyAppGlideModule](https://github.com/hirezy/ShapeImageView/tree/master/app/src/main/java/com/hirezy/shapeimageview/MyAppGlideModule.java)
 
 ```java
 
