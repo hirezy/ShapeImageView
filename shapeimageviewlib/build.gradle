@@ -20,6 +20,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    publishing {
+        singleVariant("release")
+    }
 }
 
 dependencies {
@@ -36,19 +39,11 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             group = 'com.github.hirezy'
             version = '1.0.0'
-            release(MavenPublication) {
+            maven(MavenPublication) {
                 // Applies the component for the release build variant.
                 from components.release
                 groupId = group
                 artifactId = 'ShapeImageView'
-                version = version
-            }
-            debug(MavenPublication) {
-                // Applies the component for the debug build variant.
-                from components.debug
-
-                groupId = group
-                artifactId = 'ShapeImageView-debug'
                 version = version
             }
         }

@@ -2,15 +2,15 @@
 buildscript {
     repositories {
         maven { url 'https://jitpack.io' }
+        google()
+        mavenLocal()
+        mavenCentral()
         maven {
             url 'https://maven.aliyun.com/repository/public/'
         }
         maven {
             url 'https://maven.aliyun.com/repository/central'
         }
-        google()
-        mavenLocal()
-        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
@@ -19,15 +19,15 @@ buildscript {
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
+        google()
+        mavenLocal()
+        mavenCentral()
         maven {
             url 'https://maven.aliyun.com/repository/public/'
         }
         maven {
             url 'https://maven.aliyun.com/repository/central'
         }
-        google()
-        mavenLocal()
-        mavenCentral()
     }
 }
 tasks.register('clean', Delete) {
